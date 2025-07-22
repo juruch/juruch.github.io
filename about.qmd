@@ -1,0 +1,25 @@
+## 
+
+---
+title: "About"
+about:
+  template: trestles
+  image: Figures/Fig-me.jpg
+  links:
+    - icon: github
+      text: github
+      href: https://github.com/juruch?tab=repositories
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/justine-ruch-522987369/
+---
+
+# Justine Ruch
+
+## About me
+
+My name is Justine Ruch, I'm a student at Bordeaux University in the CMI-ISI and I am currently doing a research internship at University of Sherbrooke under professor Toby Dylan Hocking.
+
+## About this blog
+
+I am currently trying to create this blog !

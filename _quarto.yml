@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Blog"
+  navbar:
+    right:
+      - href: about.qmd
+        text: Justine Ruch
+      - icon: github
+        href: https://github.com/juruch?tab=repositories
+      - icon: linkedin
+        href: https://www.linkedin.com/in/justine-ruch-522987369/
+
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+

@@ -1,0 +1,43 @@
+---
+title: "Introduction to mlr3"
+layout: post
+author: "Justine Ruch"
+date: "2025-07-01"
+description: My learning of mlr3
+categories: [code, analysis]
+---
+
+In this blog I aim to explain what I understand from re-doing [the following tutorial.](https://tdhock.github.io/blog/2025/mlr3torch-conv/)
+
+## Introduction
+
+## Loading the dataset
+
+Before starting the tutorial I had to create a seperate file to download the csv file that was needed.
+
+In a file that I called Download.R :
+
+```{r, eval=FALSE}
+other.name.vec <- c("EMNIST", "FashionMNIST")
+data.name.vec <- c(other.name.vec, "MNIST")
+
+prefix <- "https://rcdata.nau.edu/genomic-ml/cv-same-other-paper/data_Classif/"
+data_Classif <- "~/data_Classif"
+options(timeout = 600)#seconds
+for(data.name in data.name.vec){
+  data.csv <- paste0(data.name, ".csv")
+  local.csv <- file.path(data_Classif, data.csv)
+  if(!file.exists(local.csv)){
+    remote.csv <- paste0(prefix, data.csv)
+    download.file(remote.csv, local.csv)
+  }
+}
+```
+
+This code will create a new folder called data_Classif in which you'll find the files :
+
+-   EMNIST.csv
+
+-   FashionMNIST.csv
+
+-   MNIST.csv

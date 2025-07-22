@@ -1,0 +1,15 @@
+{
+  "hash": "722e38dedcc99aa8b794908957c9da0c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Introduction to mlr3\"\nlayout: post\nauthor: \"Justine Ruch\"\ndate: \"2025-07-01\"\ndescription: My learning of mlr3\ncategories: [code, analysis]\n---\n\n\n\nIn this blog I aim to explain what I understand from re-doing [the following tutorial.](https://tdhock.github.io/blog/2025/mlr3torch-conv/)\n\n## Introduction\n\n## Loading the dataset\n\nBefore starting the tutorial I had to create a seperate file to download the csv file that was needed.\n\nIn a file that I called Download.R :\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nother.name.vec <- c(\"EMNIST\", \"FashionMNIST\")\ndata.name.vec <- c(other.name.vec, \"MNIST\")\n\nprefix <- \"https://rcdata.nau.edu/genomic-ml/cv-same-other-paper/data_Classif/\"\ndata_Classif <- \"~/data_Classif\"\noptions(timeout = 600)#seconds\nfor(data.name in data.name.vec){\n  data.csv <- paste0(data.name, \".csv\")\n  local.csv <- file.path(data_Classif, data.csv)\n  if(!file.exists(local.csv)){\n    remote.csv <- paste0(prefix, data.csv)\n    download.file(remote.csv, local.csv)\n  }\n}\n```\n:::\n\n\n\nThis code will create a new folder called data_Classif in which you'll find the files :\n\n-   EMNIST.csv\n\n-   FashionMNIST.csv\n\n-   MNIST.csv\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
