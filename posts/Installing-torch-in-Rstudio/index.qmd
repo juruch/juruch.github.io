@@ -1,0 +1,54 @@
+---
+title: "Installing torch in RStudio"
+layout: post
+author: "Justine Ruch"
+date: "2025-08-15"
+description: How to install the torch library in R
+categories: [tutorial, Sherbrooke Internship]
+---
+
+In this blog post you can find a quick tutorial on how to install the package **torch** in Rstudio.
+
+## Introduction
+
+The torch library is often used for machine learning, in python it's known as PyTorch.  
+You can find out more about the use of torch in R [here.](https://torch.mlverse.org)
+
+## Installing the package
+
+Before starting the tutorial I had to create a seperate file to download the csv file that was needed.
+
+In a file that I called Download.R :
+
+```{r, eval=FALSE}
+install.packages("torch")
+```
+
+```{r, eval=FALSE}
+library(torch)
+```
+
+When you run this command you might get the following message : 
+<div style="text-align: center;">
+  <img src="figures/Additional-software.png" alt="Additionnal-sowtware" width="100%">
+</div>
+
+And you should have a new window open, you can click on the icon to open it.  
+<div style="text-align: center;">
+  <img src="figures/Window.png" alt="Window" width="60%">
+</div>
+
+When you open the window you should get the following : 
+<div style="text-align: center;">
+  <img src="figures/Question.png" alt="Question" width="60%">
+</div>
+
+To finalise the installation of torch you should click on yes, or the leftmost button.
+ 
+Then you can run the following command to check if the package is installed.
+
+```{r}
+torch::torch_is_installed()
+```
+
+If the call returns **TRUE** you have successfully installed torch in your RStudio !
