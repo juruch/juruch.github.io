@@ -16,9 +16,7 @@ You can find out more about the use of torch in R [here.](https://torch.mlverse.
 
 ## Installing the package
 
-Before starting the tutorial I had to create a seperate file to download the csv file that was needed.
-
-In a file that I called Download.R :
+To install the package torch open a RStudio and in the console copy and paste the following lines of code.
 
 ```{r, eval=FALSE}
 install.packages("torch")
@@ -28,17 +26,17 @@ install.packages("torch")
 library(torch)
 ```
 
-When you run this command you might get the following message : 
+When you run this command you might get the following message: 
 <div style="text-align: center;">
   <img src="figures/Additional-software.png" alt="Additionnal-sowtware" width="100%">
 </div>
 
-And you should have a new window open, you can click on the icon to open it.  
+And you should have a new app open, you can click on the icon to view it.  
 <div style="text-align: center;">
   <img src="figures/Window.png" alt="Window" width="60%">
 </div>
 
-When you open the window you should get the following : 
+When you open the window you should get the following: 
 <div style="text-align: center;">
   <img src="figures/Question.png" alt="Question" width="60%">
 </div>
@@ -52,3 +50,9 @@ torch::torch_is_installed()
 ```
 
 If the call returns **TRUE** you have successfully installed torch in your RStudio !
+If not you can try and run the following command befire re-runing the command above.
+
+```{r}
+torch::install_torch()
+```
+
