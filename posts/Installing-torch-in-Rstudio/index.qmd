@@ -27,32 +27,34 @@ library(torch)
 ```
 
 When you run this command you might get the following message: 
-<div style="text-align: center;">
-  <img src="figures/Additional-software.png" alt="Additionnal-sowtware" width="100%">
-</div>
+```{r, eval=FALSE}
+> library(torch)
+ℹ Additional software needs to be downloaded and installed for torch to work correctly.
+```
+
 
 And you should have a new app open, you can click on the icon to view it.  
-<div style="text-align: center;">
-  <img src="figures/Window.png" alt="Window" width="60%">
-</div>
+
+![Window](figures/Window.png)
 
 When you open the window you should get the following: 
-<div style="text-align: center;">
-  <img src="figures/Question.png" alt="Question" width="60%">
-</div>
+
+
+![Question](figures/Question.png)
+
 
 To finalise the installation of torch you should click on yes, or the leftmost button.
  
 Then you can run the following command to check if the package is installed.
 
-```{r}
+```{r, eval=FALSE}
 torch::torch_is_installed()
 ```
 
-If the call returns **TRUE** you have successfully installed torch in your RStudio !
+If the call returns `TRUE` you have successfully installed torch in your RStudio !
 If not you can try and run the following command befire re-runing the command above.
 
-```{r}
+```{r, eval=FALSE}
 torch::install_torch()
 ```
 
