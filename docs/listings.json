@@ -2,14 +2,16 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Pull-Requests-and-an-R-package/index.html",
+      "/posts/Installing-torch-in-Rstudio/index.html",
       "/posts/Introduction-to-mlr3/index.html"
     ]
   },
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html",
+      "/posts/Pull-Requests-and-an-R-package/index.html",
+      "/posts/Installing-torch-in-Rstudio/index.html",
       "/posts/Introduction-to-mlr3/index.html"
     ]
   }

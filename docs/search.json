@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Introduction to mlr3\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\nMy learning of mlr3\n\n\n\n\n\nJul 1, 2025\n\n\nJustine Ruch\n\n\n\n\n\n\nNo matching items"
+    "text": "Installing torch in RStudio\n\n\n\n\n\n\ntutorial\n\n\nSherbrooke Internship\n\n\n\nHow to install the torch library in R\n\n\n\n\n\nAug 15, 2025\n\n\nJustine Ruch\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to mlr3\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\nSherbrooke Internship\n\n\n\nMy learning of mlr3\n\n\n\n\n\nJul 1, 2025\n\n\nJustine Ruch\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Introduction-to-mlr3/index.html",
@@ -60,6 +60,27 @@
     "href": "posts.html",
     "title": "All posts",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJul 14, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nJul 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to mlr3\n\n\n\ncode\n\n\nanalysis\n\n\n\nMy learning of mlr3\n\n\n\nJustine Ruch\n\n\nJul 1, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Installing torch in RStudio\n\n\n\ntutorial\n\n\nSherbrooke Internship\n\n\n\nHow to install the torch library in R\n\n\n\nJustine Ruch\n\n\nAug 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to mlr3\n\n\n\ncode\n\n\nanalysis\n\n\nSherbrooke Internship\n\n\n\nMy learning of mlr3\n\n\n\nJustine Ruch\n\n\nJul 1, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Installing-torch-in-Rstudio/index.html",
+    "href": "posts/Installing-torch-in-Rstudio/index.html",
+    "title": "Installing torch in RStudio",
+    "section": "",
+    "text": "In this blog post you can find a quick tutorial on how to install the package torch in Rstudio."
+  },
+  {
+    "objectID": "posts/Installing-torch-in-Rstudio/index.html#introduction",
+    "href": "posts/Installing-torch-in-Rstudio/index.html#introduction",
+    "title": "Installing torch in RStudio",
+    "section": "Introduction",
+    "text": "Introduction\nThe torch library is often used for machine learning, in python it’s known as PyTorch.\nYou can find out more about the use of torch in R here."
+  },
+  {
+    "objectID": "posts/Installing-torch-in-Rstudio/index.html#installing-the-package",
+    "href": "posts/Installing-torch-in-Rstudio/index.html#installing-the-package",
+    "title": "Installing torch in RStudio",
+    "section": "Installing the package",
+    "text": "Installing the package\nBefore starting the tutorial I had to create a seperate file to download the csv file that was needed.\nIn a file that I called Download.R :\n\ninstall.packages(\"torch\")\n\n\nlibrary(torch)\n\nWhen you run this command you might get the following message :\n\n\n\nAnd you should have a new window open, you can click on the icon to open it.\n\n\n\n\nWhen you open the window you should get the following :\n\n\n\nTo finalise the installation of torch you should click on yes, or the leftmost button.\nThen you can run the following command to check if the package is installed.\n\ntorch::torch_is_installed()\n\n[1] TRUE\n\n\nIf the call returns TRUE you have successfully installed torch in your RStudio !"
   }
 ]

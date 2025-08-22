@@ -4,7 +4,7 @@
 title: "About"
 about:
   template: trestles
-  image: Figures/Fig-me.jpg
+  image: figures/Fig-me.jpg
   links:
     - icon: github
       text: github

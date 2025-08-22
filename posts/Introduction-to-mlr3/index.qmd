@@ -4,18 +4,16 @@ layout: post
 author: "Justine Ruch"
 date: "2025-07-01"
 description: My learning of mlr3
-categories: [code, analysis]
+categories: [code, analysis, Sherbrooke Internship]
 ---
 
-In this blog I aim to explain what I understand from re-doing [the following tutorial.](https://tdhock.github.io/blog/2025/mlr3torch-conv/)
+In this blog post I aim to explain what I understand from re-doing [the following tutorial.](https://tdhock.github.io/blog/2025/mlr3torch-conv/)
 
 ## Introduction
 
 ## Loading the dataset
 
-Before starting the tutorial I had to create a seperate file to download the csv file that was needed.
 
-In a file that I called Download.R :
 
 ```{r, eval=FALSE}
 other.name.vec <- c("EMNIST", "FashionMNIST")
